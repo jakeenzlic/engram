@@ -81,8 +81,10 @@ Required runtime env vars:
 - `ENGRAM_JWT_SECRET`
 - `ENGRAM_CLOUD_ALLOWED_PROJECTS`
 - `ENGRAM_CLOUD_HOST=0.0.0.0`
-- `ENGRAM_CLOUD_MAX_PUSH_BYTES` (optional; defaults to `8388608`)
 - `ENGRAM_PORT=18080`
+
+Optional runtime env vars:
+- `ENGRAM_CLOUD_MAX_PUSH_BYTES` (defaults to `8388608`)
 
 Dokploy guidance:
 1. Create a managed Postgres service.
