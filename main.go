@@ -44,6 +44,10 @@ func main() {
 		if err != nil {
 			log.Fatalf("search failed: %v", err)
 		}
+		if len(results) == 0 {
+			fmt.Println("no results found")
+			return
+		}
 		for _, r := range results {
 			fmt.Println(r)
 		}
